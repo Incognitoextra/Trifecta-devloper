@@ -1,0 +1,19 @@
+# Fichiers compilés Java
+*.class
+*.jar
+*.war
+
+# Dossiers générés
+bin/
+target/
+build/
+out/
+
+# IDE
+.vscode/
+.idea/
+*.iml
+
+# Système
+.DS_Store
+Thumbs.db
