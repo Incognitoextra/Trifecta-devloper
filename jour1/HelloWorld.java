@@ -6,4 +6,5 @@ public class HelloWorld {
 }
 // Ici on part avec notre objectif d'apprendre le java en 3 mois 
 /* On commence avec un programme simple qui fait l'affichage d'un message 
-dans le terminal */
+dans le terminal hihihih
+*/

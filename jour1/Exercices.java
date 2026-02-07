@@ -87,7 +87,7 @@ public class Exercices {
        double Francais = 26;
        double Physique = 55;
        double moyenne = (Maths + Francais + Physique)/ 3;
-       System.out.println("EXERCICE 8: CALCUL DE MOYENNE");
+       System.out.println("EXERCICE 8: CALCUL DE MOYENNE ");
        System.out.println("Maths: " + Maths);
        System.out.println("Francais: " + Francais);
        System.out.println("Physique: " + Physique);

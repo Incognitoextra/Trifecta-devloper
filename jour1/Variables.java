@@ -12,7 +12,7 @@ public class Variables {
         short s = 14; // recoit des chiffres court
 
         // Utilisation des variables
-        System.out.println("Utlisation de nos variables");
+        System.out.println(" Utlisation de nos variables ");
         System.out.println("Int = " + nombre);
         System.out.println("Double = " + reel);
         System.out.println("char = " + caractere);
