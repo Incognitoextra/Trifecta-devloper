@@ -35,13 +35,9 @@ public class defijour4 {
         System.out.println("DETAILS DU CALCUL");
 
         // Calcul des tranches
-        double impot = 0;
+    
         double revenuRestant = revenuAnnuel;
-        double impotAnnuel = 0;
-        double impotMensuel = 0 ;
         double salaireNetAnnuel = 0;
-        double salaireNetMensuel = 0;
-        double tauxImposition = 0;
         double totalImpot = 0;
         double baseTranche = 0;
         double impotTranche = 0;

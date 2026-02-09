@@ -19,32 +19,30 @@ public class Exo4 {
 
         System.out.println("Entrer la note (sur 100)");
         int note = sc.nextInt();
-        String noteConverti = "";
-        if (note < 0 && note > 100) {
+        String noteConverti;
+        // 1. Validation de l'entrée
+        if (note < 0 || note > 100) {
             System.out.println("Note invalide");
-        } else if(note >= 93 && note<=96){
-            noteConverti = "A";
-        } else if(note >=97){
-            noteConverti = "A+";
-        } else if(note >= 92){
-            noteConverti = "A-";
-        } else if(note >= 83 && note <= 86){
-            noteConverti = "B";
-        } else if(note >= 87){
-            noteConverti = "B+";
-        } else if(note <= 82){
-            noteConverti = "B-";
-        }else if (note >= 73 && note <= 76){
-            noteConverti = "C";
-        } else if(note >= 77){
-            noteConverti = "C+";
-        } else if(note <= 72){
-            noteConverti = "C-";
-        } else if (note >= 60 && note <= 69){
-            noteConverti = "D";
-        } else{
-            noteConverti = "F";
+            return; // On arrête le programme ici
         }
+
+        // 2. Déterminer la lettre de base
+        if (note >= 90)      noteConverti = "A";
+        else if (note >= 80) noteConverti = "B";
+        else if (note >= 70) noteConverti = "C";
+        else if (note >= 60) noteConverti = "D";
+        else                 noteConverti = "F";
+
+        // 3. Ajouter le symbole (+ ou -) 
+        // Uniquement si ce n'est pas un F et que la note n'est pas 100
+        if (!noteConverti.equals("F") && note != 100) {
+            int unite = note % 10; // On récupère le dernier chiffre (ex: 87 -> 7)
+            
+            if (unite >= 7)      noteConverti += "+";
+            else if (unite <= 2) noteConverti += "-";
+        }
+
+        if (note == 100) noteConverti = "A+"; // Cas particulier pour le score parfait
 
         System.out.println("Vous avez eu un : "+noteConverti);
         sc.close();
