@@ -26,7 +26,6 @@ public class Exo6 {
                     String nom = sc1.next();
                     System.out.print("Entrer le prix du plat: ");
                     double prix = sc2.nextDouble();
-
                     total = total + prix;
                     break;
             
